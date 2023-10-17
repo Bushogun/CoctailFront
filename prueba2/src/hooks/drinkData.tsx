@@ -12,7 +12,6 @@ const drinkData = () => {
     const fetchData = async () => {
       try {
         const products = await fetchDrinks(dispatch, requestDrinks);
-        console.log(products)
         dispatch(setProducts(products));
         dispatch(setLoading(false));
       } catch (error) {

@@ -1,22 +1,28 @@
 import { IDrink } from "../../Interfaces/i-drinks";
-import drinkData from "../../hooks/drinkData";
-// import { useAppDispatch } from "../../redux/hooks";
 
 interface Props {
   product: IDrink;
 }
 
 export const Card = ({ product }: Props) => {
-  // const dispatch = useAppDispatch();
   return (
-    <div className="text-sm bg-slate-400 mb-2 p-4 rounded-md">
-      {product.idDrink}
-      {product.strDrink}
-      {product.strCategory}
-      {product.strAlcoholic}
-      {product.strInstructions}
-      {product.strInstructionsES}
-      {product.strDrinkThumb}
+<div className="max-w-md mx-auto bg-gray-600 p-6 rounded-md shadow-md m-10">
+  <div className="flex justify-between">
+    <div className="w-3/5">
+      <h5 className="text-lg font-semibold mb-2">ID Bebida: {product.idDrink}</h5>
+      <p className="text-sm mb-2">{product.strInstructions}</p>
+      <div className="flex space-x-2">
+        <div className="inline-block bg-green-700 p-2 rounded-md">
+          <span className="text-xs text-white font-semibold">{product.strCategory}</span>
+        </div>
+        <div className="inline-block bg-red-500 p-2 rounded-md">
+          <span className="text-xs text-white font-semibold">{product.strAlcoholic}</span>
+        </div>
+      </div>
     </div>
+    <img src={product.strDrinkThumb} alt={product.strDrink} className="rounded-full w-32 h-32" />
+  </div>
+</div>
+
   );
 }

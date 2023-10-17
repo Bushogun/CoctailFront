@@ -10,7 +10,6 @@ function Home() {
   const products: IDrink | any = useAppSelector(state => state.productReducer.products);
   const loading = useAppSelector(state => state.productReducer.loading);
   const error = useAppSelector(state => state.productReducer.error);
-  console.log(JSON.stringify(products));
 
   if (loading) {
     return <Loading />;
@@ -25,7 +24,7 @@ function Home() {
   }
 
   return (
-    <div className='flex flex-col items-center mt-5'>
+    <div className='flex flex-col items-center'>
       <div className='w-full max-w-screen-lg'>
         {products.drinks.map((drink: IDrink) => (
           <Card key={drink.idDrink} product={drink} />

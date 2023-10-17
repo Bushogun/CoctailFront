@@ -2,7 +2,7 @@ export interface StoreProduct {
     categories: [];
     products: [];
     selectCategory: string;
-    selectProduct: string;
+    searchQuery: string;
     loading: Boolean;
     error: string | null;
   }
@@ -10,7 +10,7 @@ export interface StoreProduct {
     categories: [],
     products: [],
     selectCategory: "All",
-    selectProduct: "",
+    searchQuery: "",
     loading: false,
     error: null,
   };

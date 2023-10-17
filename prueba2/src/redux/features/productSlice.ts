@@ -11,8 +11,8 @@ const productSlice = createSlice({
     setSelectCategory: (state, action) => {
       state.selectCategory = action.payload;
     },
-    setSelectProduct: (state, action) => {
-      state.selectProduct = action.payload;
+    setSearchQuery: (state, action) => {
+      state.searchQuery = action.payload;
     },
     setLoading: (state, action) => {
       state.loading = action.payload;
@@ -26,7 +26,7 @@ const productSlice = createSlice({
 export const {
   setProducts,
   setSelectCategory,
-  setSelectProduct,
+  setSearchQuery,
   setLoading,
   setError,
 } = productSlice.actions;

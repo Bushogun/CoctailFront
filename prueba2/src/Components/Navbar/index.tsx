@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { SearchBarForm } from './search-bar-form'
 
 const Navbar = () => {
     return (
@@ -14,7 +15,11 @@ const Navbar = () => {
                         All
                     </NavLink>
                 </li>
-
+                <li>
+                    <NavLink to='/'>
+                        {/* <SearchBarForm /> */}
+                    </NavLink>
+                </li>
             </ul>
 
             <ul className='flex items-center gap-3'>
