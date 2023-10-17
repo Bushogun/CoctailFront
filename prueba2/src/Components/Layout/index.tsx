@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
-    <div className='flex flex-col items-center mt-20'>
+    <div className='flex flex-col items-center mt-5'>
       {children}
     </div>
   );

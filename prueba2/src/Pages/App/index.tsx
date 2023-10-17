@@ -22,8 +22,8 @@ const App = (props: Props) => {
     <div className='flex flex-col items-center mt-20'>
       <BrowserRouter>
         <Navbar />
-        <AppRoutes/>
         <Providers>
+        <AppRoutes/>
           {props.children}
         </Providers>
       </BrowserRouter>

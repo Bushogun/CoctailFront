@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+# E-Commerce Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Before starting you must check if you have a node version equal to or greater than 16 (do it with the "npm -v" command) and an npm version equal to or greater than 9 (do it with the "npm -v" command)
 
-Currently, two official plugins are available:
+1. Go to the link https://github.com/Bushogun/CoctailFront/archive/refs/heads/main.zip
+2. Right click -> Extract here
+3. Open folder in Visual Studio Code
+4. New terminal (ctrl + shift + ñ)
+5. Run de command "cd prueba2"
+6. Run the command "npm i"
+7. Run the command "npm run dev"
+8. Go to "http://127.0.0.1:5173/" on you browser
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+<p align="right">
+  <img src="https://media.giphy.com/media/SvFocn0wNMx0iv2rYz/giphy.gif" alt="GIF Animado">
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+prueba

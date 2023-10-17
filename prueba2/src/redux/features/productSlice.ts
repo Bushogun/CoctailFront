@@ -5,9 +5,6 @@ const productSlice = createSlice({
   name: "product",
   initialState: initialStateProductStore,
   reducers: {
-    setCategories: (state, action) => {
-      state.categories = action.payload;
-    },
     setProducts: (state, action) => {
       state.products = action.payload;
     },
@@ -27,7 +24,6 @@ const productSlice = createSlice({
 });
 
 export const {
-  setCategories,
   setProducts,
   setSelectCategory,
   setSelectProduct,

@@ -1,7 +1,22 @@
-const index = () => {
-  return (
-    <div className="text-3xl bg-red-700 font-bold underline">card</div>
-  )
+import { IDrink } from "../../Interfaces/i-drinks";
+import drinkData from "../../hooks/drinkData";
+// import { useAppDispatch } from "../../redux/hooks";
+
+interface Props {
+  product: IDrink;
 }
 
-export default index
+export const Card = ({ product }: Props) => {
+  // const dispatch = useAppDispatch();
+  return (
+    <div className="text-sm bg-slate-400 mb-2 p-4 rounded-md">
+      {product.idDrink}
+      {product.strDrink}
+      {product.strCategory}
+      {product.strAlcoholic}
+      {product.strInstructions}
+      {product.strInstructionsES}
+      {product.strDrinkThumb}
+    </div>
+  );
+}
