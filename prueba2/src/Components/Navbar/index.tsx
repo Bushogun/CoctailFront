@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-// import { SearchBarForm } from './search-bar-form'
+import SearchBarForm  from '../search-bar-form'
 
 const Navbar = () => {
     return (
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </li>
                 
                 <li>
-                        {/* <SearchBarForm /> */}
+                    <SearchBarForm />
                 </li>
 
             </ul>

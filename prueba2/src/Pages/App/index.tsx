@@ -30,8 +30,8 @@ const App = (props: Props) => {
   return (
     <div className='flex flex-col items-center mt-20'>
       <BrowserRouter>
-        <Navbar />
         <Providers>
+        <Navbar />
         <AppRoutes/>
           {props.children}
         </Providers>
