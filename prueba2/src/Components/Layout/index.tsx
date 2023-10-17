@@ -1,15 +1,23 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+import Loading from '../../Components/loading';
+import Error from '../../Components/error';
 
 interface LayoutProps {
-  children: ReactNode;
+  loading: Boolean;
+  error: string | null;
+  children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
-  return (
-    <div className='flex flex-col items-center mt-5'>
-      {children}
-    </div>
-  );
-};
+function Layout({ loading, error, children }: LayoutProps) {
+  if (loading) {
+    return <Loading />;
+  }
+
+  if (error) {
+    return <Error error={error} />;
+  }
+
+  return <div>{children}</div>;
+}
 
 export default Layout;

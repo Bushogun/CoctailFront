@@ -9,7 +9,8 @@ export const Card = ({ product }: Props) => {
 <div className="max-w-md mx-auto bg-gray-600 p-6 rounded-md shadow-md m-10">
   <div className="flex justify-between">
     <div className="w-3/5">
-      <h5 className="text-lg font-semibold mb-2">ID Bebida: {product.idDrink}</h5>
+      <h5 className="text-lg font-semibold mb-2">ID Drink: {product.idDrink}</h5>
+      <h5 className="text-lg font-semibold mb-2"> {product.strDrink}</h5>
       <p className="text-sm mb-2">{product.strInstructions}</p>
       <div className="flex space-x-2">
         <div className="inline-block bg-green-700 p-2 rounded-md">

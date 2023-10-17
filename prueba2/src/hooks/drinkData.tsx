@@ -2,11 +2,9 @@ import { useEffect } from 'react';
 import { setProducts, setLoading, setError } from '../redux/features/productSlice';
 import { fetchDrinks } from '../utils/api-utils';
 import { useAppDispatch } from '../redux/hooks';
-import { apiUrl } from '../api';
 
-const drinkData = () => {
+const drinkData = (requestDrinks: string) => {
   const dispatch = useAppDispatch();
-  const requestDrinks = apiUrl;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +18,7 @@ const drinkData = () => {
       }
     };
     fetchData();
-  }, [requestDrinks]);
+  },[dispatch, requestDrinks]);
 };
 
 

@@ -1,8 +1,12 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom' 
 import { Providers } from "../../redux/providers";
 import { ReactNode } from 'react'
-import  Home from '../Home'
 import Navbar from '../../Components/Navbar'
+import  Home from '../Home'
+import Alcoholic from '../Alcoholic';
+import NonAlcoholic from '../Non-Alcoholic';
+import Cocktails from '../Cocktails';
+import Ordinary from '../Ordinary';
 
 type Props = {
   children?: ReactNode
@@ -11,7 +15,12 @@ type Props = {
 const AppRoutes = () =>{
   let routes = useRoutes([
     { path:'/', element: <Home/> },
-    { path:'/About', element: <Home/> },
+    { path:'/alcoholic', element: <Alcoholic/> },
+    { path:'/non-alcoholic', element: <NonAlcoholic/> },
+    { path:'/cocktails', element: <Cocktails/> },
+    { path:'/ordinary', element: <Ordinary/> },
+
+    
   ])
   return routes
 }

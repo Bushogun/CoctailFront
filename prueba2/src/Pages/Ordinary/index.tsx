@@ -3,13 +3,13 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { IDrink } from '../../Interfaces/i-drinks';
 import Layout from '../../Components/Layout';
 import { Card } from '../../Components/Card';
-import { apiUrl } from '../../api';
+import { apiFilterCategory } from '../../api';
 import { setSelectCategory } from '../../redux/features/productSlice';
 
-function Home() {
+function Ordinary() {
   const dispatch = useAppDispatch();
-  drinkData(apiUrl);
-  dispatch(setSelectCategory("All"));
+  drinkData(apiFilterCategory +"Ordinary_Drink");
+  dispatch(setSelectCategory("Ordinary_Drink"));
 
   const products: IDrink | any = useAppSelector(state => state.productReducer.products);
   const loading = useAppSelector(state => state.productReducer.loading);
@@ -32,4 +32,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Ordinary;

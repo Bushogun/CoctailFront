@@ -3,14 +3,14 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { IDrink } from '../../Interfaces/i-drinks';
 import Layout from '../../Components/Layout';
 import { Card } from '../../Components/Card';
-import { apiUrl } from '../../api';
+import { apiFilterAlcohol } from '../../api';
 import { setSelectCategory } from '../../redux/features/productSlice';
 
-function Home() {
+function Alcoholic() {
   const dispatch = useAppDispatch();
-  drinkData(apiUrl);
-  dispatch(setSelectCategory("All"));
-
+  drinkData(apiFilterAlcohol+"Alcoholic");
+  dispatch(setSelectCategory("Alcoholic"));
+  
   const products: IDrink | any = useAppSelector(state => state.productReducer.products);
   const loading = useAppSelector(state => state.productReducer.loading);
   const error = useAppSelector(state => state.productReducer.error);
@@ -32,4 +32,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Alcoholic;
+

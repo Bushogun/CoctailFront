@@ -11,7 +11,7 @@
   
 
 export const apiUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a'
-export const apiSearchByName = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 export const apiFilterAlcohol = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a='
-export const apiUrlFilterCategory = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c='
+export const apiSearchByName = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
+export const apiFilterCategory = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c='
 

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { SearchBarForm } from './search-bar-form'
+// import { SearchBarForm } from './search-bar-form'
 
 const Navbar = () => {
     return (
@@ -7,7 +7,7 @@ const Navbar = () => {
             <ul className='flex items-center gap-3'>
                 <li className='font-bold text-lg'>
                     <NavLink to='/'>
-                        Cocteles
+                        Cocktails
                     </NavLink>
                 </li>
                 <li>
@@ -16,10 +16,30 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
-                        {/* <SearchBarForm /> */}
+                    <NavLink to='/alcoholic'>
+                        Alcoholic
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to='/non-alcoholic'>
+                        Non Alcoholic
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/cocktails'>
+                        Cocktails
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/ordinary'>
+                        Ordinary
+                    </NavLink>
+                </li>
+                
+                <li>
+                        {/* <SearchBarForm /> */}
+                </li>
+
             </ul>
 
             <ul className='flex items-center gap-3'>

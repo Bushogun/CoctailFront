@@ -20,22 +20,3 @@ const fetchData = async (url: string, dispatch: AppDispatch) => {
 export const fetchDrinks = async (dispatch: AppDispatch, requestDrinks: string) => {
   return fetchData(requestDrinks, dispatch);
 };
-
-
-
-
-
-export const fetchProductById = async (dispatch: AppDispatch, productId: string) => {
-  const url = `${process.env.NEXT_PUBLIC_REQUEST_PRODUCTS}${productId}`;
-  return fetchData(url, dispatch);
-};
-
-export const fetchProductsFiltered = async (dispatch: AppDispatch, idFilter: string) => {
-  if (idFilter === "All") {
-    const url = `${process.env.NEXT_PUBLIC_REQUEST_PRODUCTS}`;
-    return fetchData(url, dispatch);
-  } else {
-    const url = `${process.env.NEXT_PUBLIC_REQUEST_CATEGORY}${idFilter}`;
-    return fetchData(url, dispatch);
-  }
-};
